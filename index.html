@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AcademAI | Planes y Precios</title>
+    <meta name="description" content="Descubre los planes de AcademAI: impulsamos tu aprendizaje con IA." />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+      :root {
+        --primary: #0a84ff;
+        --dark: #0d1117;
+        --light: #ffffff;
+      }
+      body {
+        background-color: var(--dark);
+        color: var(--light);
+      }
+      .gradient-text {
+        background: linear-gradient(90deg, var(--primary) 0%, #64b5f6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .card {
+        background-color: #161b22;
+        border: 1px solid #30363d;
+      }
+      .card:hover {
+        border-color: var(--primary);
+        transform: translateY(-4px);
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="font-sans leading-relaxed">
+    <header class="py-4">
+      <div class="container mx-auto px-6 flex items-center justify-between">
+        <h1 class="text-2xl font-extrabold gradient-text">AcademAI</h1>
+        <nav>
+          <a href="#planes" class="text-sm hover:text-blue-400 mr-4">Planes</a>
+          <a href="#faq" class="text-sm hover:text-blue-400">FAQ</a>
+        </nav>
+      </div>
+    </header>
+    <section class="text-center py-20">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Planes a tu Medida</h2>
+      <p class="max-w-2xl mx-auto text-gray-300">
+        Elige el plan que mejor se adapte a tu estilo de aprendizaje y lleva tus habilidades al siguiente nivel con IA generativa.
+      </p>
+    </section>
+    <section id="planes" class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 pb-20">
+      <div class="card rounded-2xl p-8">
+        <h3 class="text-xl font-semibold mb-4">Pro</h3>
+        <p class="text-sm text-gray-400 mb-6">Para estudiantes comprometidos</p>
+        <span class="text-4xl font-bold">$5<span class="text-xl">/mes</span></span>
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>✔️ Acceso ilimitado a herramientas académicas</li>
+          <li>✔️ Soporte prioritario</li>
+          <li>✔️ Generación de citas, referencias y metodología</li>
+        </ul>
+        <button class="mt-8 w-full py-2 rounded-xl bg-blue-600 hover:bg-blue-700">
+          Suscríbete
+        </button>
+      </div>
+    </section>
+    <section class="py-20 bg-[#161b22]">
+      <div class="container mx-auto px-6 max-w-3xl text-center">
+        <h2 class="text-3xl font-bold gradient-text mb-10">Métodos de Pago</h2>
+        <p class="text-gray-300 mb-6">Escanea el código QR con tu aplicación favorita para completar el pago.</p>
+        <div class="flex flex-wrap justify-center gap-10">
+          <div>
+            <img src="https://via.placeholder.com/150x150.png?text=QR+Visa" class="rounded" alt="QR Visa" />
+            <p class="text-sm text-gray-400 mt-2">Tarjeta</p>
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/150x150.png?text=QR+Yape" class="rounded" alt="QR Yape" />
+            <p class="text-sm text-gray-400 mt-2">Yape</p>
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/150x150.png?text=QR+Plin" class="rounded" alt="QR Plin" />
+            <p class="text-sm text-gray-400 mt-2">Plin</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="py-8 text-center text-sm text-gray-500">
+      © <span id="year"></span> AcademAI. Todos los derechos reservados.
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
